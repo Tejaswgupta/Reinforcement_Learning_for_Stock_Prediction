@@ -25,15 +25,16 @@ agent.inventory = []
 for t in range(l):
 	action = agent.act(state)
 
-	# sit
 	next_state = getState(data, t + 1, window_size + 1)
 	reward = 0
 
-	if action == 1: # buy
+#Buy
+	if action == 1:
 		agent.inventory.append(data[t])
 		print("Buy: " + formatPrice(data[t]))
 
-	elif action == 2 and len(agent.inventory) > 0: # sell
+#Sell
+	elif action == 2 and len(agent.inventory) > 0:
 		bought_price = agent.inventory.pop(0)
 		reward = max(data[t] - bought_price, 0)
 		total_profit += data[t] - bought_price
@@ -44,6 +45,6 @@ for t in range(l):
 	state = next_state
 
 	if done:
-		print("--------------------------------")
+		print("________________________________")
 		print(stock_name + " Total Profit: " + formatPrice(total_profit))
-		print("--------------------------------")
+		print("________________________________")
