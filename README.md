@@ -1,5 +1,5 @@
 ## Overview
-This a barebones repo for verying the use of ml in stock prediction and getting close to real life results[^1]
+This a barebones repo for verying the use of ml in stock prediction and getting close to real life results. [^1]
 
 
 ## TODO
