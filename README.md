@@ -11,7 +11,9 @@ This a barebones repo for verying the use of ml in stock prediction and getting 
 
 
 
+Here's a sentence with a footnote. [^2]
 
+[^2]: This is the footnote.
 
 
 
