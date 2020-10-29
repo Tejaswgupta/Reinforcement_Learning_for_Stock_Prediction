@@ -5,8 +5,9 @@ This a barebones repo for verying the use of ml in stock prediction and getting 
 ## TODO
 * Check csv null error which occurs when a csv with some empty data is passed. Fill it with dummy/synthetic data check [this](https://github.com/scikit-learn-contrib/imbalanced-learn)
 * Implement gpu use
-* Add gui for easier use
+* Use TKinter for GUI
   * Add option to select trade markets and downlaod data from gui itself
+  * Let user choose model from GUI(xception,vgg,nasnet,etec)
  
 
 
